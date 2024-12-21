@@ -77,18 +77,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                 .into(holder.imageProduct);  // Gán hình ảnh vào ImageView
 
 
-        // Xử lý sự kiện click vào item để chuyển sang màn hình chi tiết sản phẩm
-        holder.itemView.setOnClickListener(v -> {
-            Intent intent = new Intent(context, ProductDetailActivity.class);
-            // Truyền dữ liệu sản phẩm vào Intent
-            intent.putExtra("product_name", product.getName());
-            intent.putExtra("product_image", product.getImageUrl());  // Truyền imageUrl thay vì imageResource
-            intent.putExtra("product_description", product.getDescription());
-            intent.putExtra("product_price", product.getPrice());
-            intent.putExtra("product_color", product.getColor());
-            intent.putExtra("product_rating", product.getRating());
-            context.startActivity(intent);  // Bắt đầu activity mới
-        });
+
     }
 
     @Override

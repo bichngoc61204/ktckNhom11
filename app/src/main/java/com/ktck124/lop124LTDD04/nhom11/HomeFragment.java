@@ -19,10 +19,6 @@ import android.widget.ImageView;
 
 import com.ktck124.lop124LTDD04.nhom11.API.APIClient;
 import com.ktck124.lop124LTDD04.nhom11.API.APIService;
-import com.ktck124.lop124LTDD04.nhom11.API.ApiService;
-import com.ktck124.lop124LTDD04.nhom11.API.RetrofitClient;
-import com.ktck124.lop124LTDD04.nhom11.Activity.CartActivity;
-import com.ktck124.lop124LTDD04.nhom11.Adapter.BannerAdapter;
 import com.ktck124.lop124LTDD04.nhom11.Adapter.ProductAdapter;
 import com.ktck124.lop124LTDD04.nhom11.Model.Product;
 import com.ktck124.lop124LTDD04.nhom11.R;
@@ -119,17 +115,5 @@ public class HomeFragment extends Fragment {
 
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        // Dừng tự động chuyển trang khi Fragment không hiển thị
-        bannerHandler.removeCallbacks(bannerRunnable);
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        // Tiếp tục tự động chuyển trang khi Fragment hiển thị trở lại
-        bannerHandler.postDelayed(bannerRunnable, 2000);
-    }
 }
