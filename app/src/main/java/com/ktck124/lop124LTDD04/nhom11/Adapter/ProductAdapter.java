@@ -65,7 +65,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.textProductName.setText(product.getName());
 
         // Dùng Picasso để tải hình ảnh từ URL lấy từ cơ sở dữ liệu
-        String hinhAnhUrl = "http://192.168.1.73:8081/appadroidbanquanao/images/" + product.getImageUrl();  // Đây là URL của hình ảnh
+        String hinhAnhUrl = "http://192.168.50.122:8081/appadroidbanquanao/images/" + product.getImageUrl();  // Đây là URL của hình ảnh
 
         // Log URL để kiểm tra
         Log.d("ImageURL", hinhAnhUrl);

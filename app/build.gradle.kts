@@ -40,4 +40,15 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    // Các thư viện bổ sung
+    implementation("com.google.code.gson:gson:2.8.8") // Gson
+    implementation("androidx.cardview:cardview:1.0.0") // CardView
+    implementation("com.squareup.retrofit2:retrofit:2.9.0") // Retrofit
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0") // Retrofit Gson Converter
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0") // OkHttp logging interceptor
+    implementation ("com.google.android.material:material:1.6.0")
+    // Glide cho image loading
+    implementation("com.github.bumptech.glide:glide:4.15.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.15.0") // Glide compiler
+    implementation ("com.squareup.picasso:picasso:2.71828")
 }

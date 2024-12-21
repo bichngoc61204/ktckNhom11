@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class APIClient {
     private static Retrofit retrofit;
-    private static final String baseUrl = "http://192.168.1.73:8081/appadroidbanquanao/";
+    private static final String baseUrl = "http://192.168.50.122:8081/appadroidbanquanao/";
     public static Retrofit getClient() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()

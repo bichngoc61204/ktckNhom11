@@ -59,7 +59,7 @@ public class HomeFragment extends Fragment {
         // Đặt sự kiện OnClickListener
         cartIcon.setOnClickListener(v -> {
             // Chuyển đến CartActivity
-            Intent intent = new Intent(getActivity(), CartActivity.class);
+            Intent intent = new Intent(getActivity(), ProfileFragment.class);
             startActivity(intent);
         });
 
