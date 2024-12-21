@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F1F1F1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="Quay lại" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="Hình ảnh người dùng" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhóm 11"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đề tài: Xây dựng ứng dụng bán quần áo"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:layout_below="@id/textViewName"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lớp học phần: 124LTTD04"
+        android:textSize="14sp"
+        android:textColor="#FF6200EE"
+        android:layout_below="@id/textViewAddress"
+        android:layout_marginTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/textViewOrderHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin thành viên"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_below="@id/textViewNotifications"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/orderHistoryListView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@id/textViewOrderHistory"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:background="#CCC9C9"/>
+
+</RelativeLayout>
