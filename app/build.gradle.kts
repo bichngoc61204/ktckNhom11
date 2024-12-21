@@ -40,6 +40,17 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    // Các thư viện AndroidX
+    implementation("androidx.appcompat:appcompat:1.3.1") // AppCompat
+    implementation("com.google.android.material:material:1.4.0") // Material Design
+    implementation("androidx.activity:activity:1.2.4") // Activity
+    implementation("androidx.constraintlayout:constraintlayout:2.1.0") // ConstraintLayout
+
+    // Thư viện testing
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.3")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+
     // Các thư viện bổ sung
     implementation("com.google.code.gson:gson:2.8.8") // Gson
     implementation("androidx.cardview:cardview:1.0.0") // CardView
